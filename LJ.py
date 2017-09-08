@@ -66,6 +66,11 @@ def gaussKernel(q1, q2, sigma):
     return np.exp(-1/(2*sigma**2)*d**2)
 
 
+def HessGaussKernel(q1, q2, sigma):
+    N = q1.shape[0]
+    Hesskernel = np.zeros((N, N))
+    for i 
+
 def kernelMat(Q, sigma):
     Ndata = Q.shape[0]
     K = np.zeros((Ndata, Ndata))
@@ -130,6 +135,7 @@ if __name__ == "__main__":
     print(Etrain)
     print(Etest)
     print(Epredict)
+
     
 
 
